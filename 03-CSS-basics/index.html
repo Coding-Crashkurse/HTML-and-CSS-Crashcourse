@@ -2,127 +2,62 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <h1 style="color:blue;">Ich bin ein Header</h1>
-    <h2>Ich bin ein Header</h2>
-    <h3>Ich bin ein Header</h3>
-    <h4>Ich bin ein Header</h4>
-    <h5>Ich bin ein Header</h5>
-    <h6>Ich bin ein Header</h6>
-    <p>Ich bin ein Paragraph</p>
-    <p>Ich bin ein <em>Paragraph</em></p>
-    <p>Ich bin ein <strong>Paragraph</strong></p>
-    <a href="https://www.google.com" target="_blank">Google.com</a>
-    <a href="test.html">Test</a>
-    <br />
-    <br />
-    <hr />
-    <p>sdasd</p>
-    <!-- Block vs Inline Elements -->
-    <p>Block1</p>
-    <p>Block2</p>
-    <a href="">Inline1</a>
-    <a href="">Inline2</a>
-    <span>Test</span>
-    <hr />
-    <!-- Div https://www.w3schools.com/tags/tag_div.ASP -->
-    <div>
-        <a href="">Inline1</a>
-        <a href="">Inline2</a>
-    </div>
-    <div>
-        <a href="">Inline3</a>
-        <a href="">Inline4</a>
-    </div>
-    <!-- https://www.w3schools.com/html/html_blocks.asp -->
-    <img src="https://i.pinimg.com/564x/7d/8e/35/7d8e3564a9fc138e415085bbdc45f39e--simpsons-marge-simpsons-characters.jpg"
-        alt="Marge Simpson" width="200px" height="250px" />
-    <!-- Button -->
-    <button>Klick mich</button>
-    <!-- Listen -->
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ul>
-    <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ol>
-    <!-- Tables -->
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Alter</th>
-                <th>Geschlecht</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Max</td>
-                <td>29</td>
-                <td>männlich</td>
-            </tr>
-            <tr>
-                <td>Susanne</td>
-                <td>32</td>
-                <td>weiblich</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="2">Footer</td>
-            </tr>
-        </tfoot>
-    </table>
-    <hr />
-    <!-- Forms -->
-    <form action="" method="POST">
-        <fieldset>
-            <legend>Login</legend>
-            <div>
-                <label for="firstname">Vorname</label>
-                <input type="text" placeholder="Vorname" name="firstname" />
-            </div>
-            <div>
-                <label for="firstname">Nachname</label>
-                <input type="text" placeholder="Nachname" name="nachname" />
-            </div>
-            <div>
-                <label for="firstname">Email</label>
-                <input type="email" placeholder="Email" name="email" />
-            </div>
-            <div>
-                <label for="condition">Ich akzeptiere Cookies</label>
-                <input type="checkbox" id="über" name="condition" checked />
-            </div>
-            <div>
-                <label for="birthday">Geburtstag</label>
+    <!--
+    <h1 style="color:red;">Header 1</h1> -->
+    <h1>Header 1</h1>
+    <h1 class="header">Header 1</h1>
+    <h2>Header 2</h2>
+    <h2 class="header">Header 2</h2>
+    <p class="letters">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus repudiandae hic ducimus illo
+        saepe libero,
+        totam ullam quia temporibus, eius unde excepturi culpa iure quos, quasi aliquid ipsa cupiditate? Natus tempora
+        odit in possimus hic eos necessitatibus id unde vero!</p>
 
-                <input type="date" id="birthday" name="trip-start" value="2018-07-22" min="1950-01-01"
-                    max="2014-01-01" />
-                <div>
-                    <label for="gender">Geschlecht:</label>
-                    <select name="gender" id="gender">
-                        <option value="M">M</option>
-                        <option value="W">W</option>
-                        <option value="D">D</option>
-                    </select>
-                </div>
-                <div>
-                    <input type="submit" value="Formular abschicken" />
-                </div>
-            </div>
-        </fieldset>
+    <div class="container">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sit cumque suscipit veritatis facilis
+            quasi, vitae eaque commodi perspiciatis doloremque.</div>
+    </div>
+
+    <ul class="pseudo">
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+        <li>Item4</li>
+        <li>Item5</li>
+        <li>Item6</li>
+    </ul>
+
+    <ul class="anchor">
+        <li><a href="https://www.blabla.com" target="_blank">Item1</a></li>
+        <li><a href="test" target="_blank">Item2</a></li>
+        <li><a href="">Item3</a></li>
+    </ul>
+
+    <!-- Formulare -->
+    <form class="myform">
+        <h3>Login</h2>
+            <input type="text" placeholder="firstname">
+            <input type="text" placeholder="lastname">
+            <input type="submit" value="Bestätigen">
     </form>
+
+    <div class="relative_container">
+        <div class="absolute_content">Ich bin Text</div>
+    </div>
+
+    <div class="wrapper">
+        <button>Click me</button>
+    </div>
+
+
 </body>
 
 </html>

@@ -1,51 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Unsere erste Website</title>
 </head>
 
 <body>
-    <h1>Ich bin ein Header</h1>
-    <h2>Ich bin ein Header</h2>
-    <h3>Ich bin ein Header</h3>
-    <h4>Ich bin ein Header</h4>
-    <h5>Ich bin ein Header</h5>
-    <h6>Ich bin ein Header</h6>
+    <h1>Das ist unsere erste Website</h1>
+    <h2>Das ist unsere erste Website</h2>
+    <h3>Das ist unsere erste Website</h3>
+    <h4>Das ist unsere erste Website</h4>
+    <h5>Das ist unsere erste Website</h5>
+    <h6>Das ist unsere erste Website</h6>
     <p>Ich bin ein Paragraph</p>
     <p>Ich bin ein <em>Paragraph</em></p>
     <p>Ich bin ein <strong>Paragraph</strong></p>
-    <a href="https://www.google.com" target="_blank">Google.com</a>
-    <a href="test.html">Test</a>
-    <br />
+    <a href="https://google.com" target="_blank">Google.com</a>
+    <a href="test.html">Zum Test</a>
     <br />
     <hr />
-    <p>sdasd</p>
-    <!-- Block vs Inline Elements -->
-    <p>Block1</p>
-    <p>Block2</p>
-    <a href="">Inline1</a>
-    <a href="">Inline2</a>
-    <span>Test</span>
-    <hr />
-    <!-- Div https://www.w3schools.com/tags/tag_div.ASP -->
     <div>
-        <a href="">Inline1</a>
-        <a href="">Inline2</a>
+        <a href="https://google.com" target="_blank">Google.com</a>
+        <a href="https://google.com" target="_blank">Google.com</a>
     </div>
     <div>
-        <a href="">Inline3</a>
-        <a href="">Inline4</a>
+        <a href="https://google.com" target="_blank">Google.com</a>
+        <a href="https://google.com" target="_blank">Google.com</a>
     </div>
-    <!-- https://www.w3schools.com/html/html_blocks.asp -->
-    <img src="https://i.pinimg.com/564x/7d/8e/35/7d8e3564a9fc138e415085bbdc45f39e--simpsons-marge-simpsons-characters.jpg"
-        alt="Marge Simpson" width="200px" height="250px" />
-    <!-- Button -->
+    <img src="https://img.welt.de/ig/incoming/mobile213643582/4161354947-ci16x9-w1200/Election-2020-Marge-Simpson.jpg"
+        alt="Marge Simpson" width="300px">
     <button>Klick mich</button>
-    <!-- Listen -->
+    <button>Klick mich</button>
+    <button>Klick mich</button>
     <ul>
         <li>Item 1</li>
         <li>Item 2</li>
@@ -56,7 +42,7 @@
         <li>Item 2</li>
         <li>Item 3</li>
     </ol>
-    <!-- Tables -->
+    <!-- Tabellen -->
     <table>
         <thead>
             <tr>
@@ -79,50 +65,51 @@
         </tbody>
         <tfoot>
             <tr>
-                <td colspan="2">Footer</td>
+                <td colspan="2">
+                    Footer
+                </td>
             </tr>
         </tfoot>
     </table>
-    <hr />
     <!-- Forms -->
-    <form action="" method="POST">
+    <form action="">
         <fieldset>
             <legend>Login</legend>
             <div>
                 <label for="firstname">Vorname</label>
-                <input type="text" placeholder="Vorname" name="firstname" />
+                <input type="text" placeholder="Vorname" name="firstname">
             </div>
             <div>
-                <label for="firstname">Nachname</label>
-                <input type="text" placeholder="Nachname" name="nachname" />
+                <label for="lastname">Nachname</label>
+                <input type="text" placeholder="Nachname" name="lastname">
             </div>
             <div>
-                <label for="firstname">Email</label>
-                <input type="email" placeholder="Email" name="email" />
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" name="email">
             </div>
             <div>
-                <label for="condition">Ich akzeptiere Cookies</label>
-                <input type="checkbox" id="über" name="condition" checked />
+                <label for="condition">Ich akzeptiere die Cookies</label>
+                <input type="checkbox" name="condition">
             </div>
             <div>
                 <label for="birthday">Geburtstag</label>
-
-                <input type="date" id="birthday" name="trip-start" value="2018-07-22" min="1950-01-01"
-                    max="2014-01-01" />
-                <div>
-                    <label for="gender">Geschlecht:</label>
-                    <select name="gender" id="gender">
-                        <option value="M">M</option>
-                        <option value="W">W</option>
-                        <option value="D">D</option>
-                    </select>
-                </div>
-                <div>
-                    <input type="submit" value="Formular abschicken" />
-                </div>
+                <input type="date" value="2020-07-22" min="2020-07-22" max="2022-08-30">
+            </div>
+            <div>
+                <label for="gender">Geschlecht</label>
+                <select name="gender">
+                    <option value="m">männlich</option>
+                    <option value="w">weiblich</option>
+                    <option value="d">divers</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Formular abschicken">
             </div>
         </fieldset>
     </form>
+
+
 </body>
 
 </html>
